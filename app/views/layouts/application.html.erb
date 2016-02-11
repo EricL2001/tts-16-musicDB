@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MusicDb</title>
+  <title>Top5Songs</title>
 
   <!-- Latest compiled and minified CSS -->
 
-
-  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" %>  
-
-  
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-  <%= csrf_meta_tags %>
+<%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" %>   
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>    
+<%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" %>  
+ <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>   
+ <%= csrf_meta_tags %>
 
 
 </head>
@@ -22,7 +20,7 @@
         <div class="cover-container">
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand"><i class="glyphicon glyphicon-headphones" ></i>Mariel's Top Jams</h3>
+              <h3 class="masthead-brand"><i class="glyphicon glyphicon-headphones" ></i>Eric's Top Jams</h3>
               <nav>
                 <ul class="nav masthead-nav">
                   <li><%= link_to "Top 5", root_path %></li>

@@ -17,16 +17,14 @@
           <h2><%= link_to song.name, song %></h2>
           <h4><%= song.artist.name %></h4>
           <h4><%= song.rating %></h4>
-          <p><%= link_to 'Edit', edit_song_path(song) do %>
-                <i class="glyphicon glyphicon-pencil"></i>
-            <% end %>
-            <%= link_to 'Destroy', song, method: :delete, data: { confirm: 'Are you sure?' }  do %>
-                  <i class="glyphicon glyphicon-trash"></i>
-                <% end %>
-          </p>
+            <p><%= link_to edit_song_path(song) do %>
+                  <i class="glyphicon glyphicon-pencil"></i>
+              <% end %>
+              <%= link_to song, method: :delete, data: { confirm: 'Are you sure?' }  do %>
+                    <i class="glyphicon glyphicon-trash"></i>
+              <% end %>
+            </p>
         </div>
       </div>  
     <% end %>
-</div>
-
-<%= link_to 'New Song', new_song_path %>
+  </div>
